@@ -1,3 +1,9 @@
-# Friends App
+# End-to-End Testing with Cypress
 
-Starting point for Cypress Testing
+### Topics
+- [ ] End-to-End (A-Z) Testing
+- [ ] Jest vs Cypress
+- [ ] Introduction to Cypress
+- [ ] Install and Configure Cypress
+- [ ] Design End-to-End Tests with Cypress
+
