@@ -1,8 +1,10 @@
-# End-to-End Testing with Cypress
+# W08D02 - Unit & Integration Testing
 
-### Topics
-- [ ] End-to-End (A-Z) Testing
-- [ ] Jest vs Cypress
-- [ ] Introduction to Cypress
-- [ ] Install and Configure Cypress
-- [ ] Design End-to-End Tests with Cypress
+### To Do
+- [] Tools for testing React
+- [] Coverage Reports
+- [] Add Features/Tests to our App
+- [] `debug()` and `prettyDOM()`
+- [] Mocking AJAX Requests and Functions
+
+
