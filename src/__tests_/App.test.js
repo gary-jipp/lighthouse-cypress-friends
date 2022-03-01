@@ -1,4 +1,4 @@
-import { screen, render, cleanup, fireEvent, prettyDOM } from "@testing-library/react";
+import { screen, render, cleanup, fireEvent, prettyDOM, within } from "@testing-library/react";
 import '@testing-library/jest-dom';
 import App from "App";
 import mockedAxios from 'axios';
@@ -81,7 +81,6 @@ describe('List Tests', () => {
 
     const list = screen.getByRole("list");
     console.log(prettyDOM(list));
-
   });
 
 });
