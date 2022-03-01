@@ -57,17 +57,16 @@ describe('List Tests', () => {
     const button = screen.getByTestId("load-friends");    // Multiple found - list
     fireEvent.click(button);
 
-    // console.log(prettyDOM(container));
 
-    // const listItems = screen.getAllByRole("listitem");  // This won't work because Asynd
+    // // console.log(prettyDOM(container));
+    // // const listItems = screen.getAllByRole("listitem");  // This won't work because Async call
 
-    // Add async and await
+    // // Add async and await
     const listItems = await screen.findAllByRole("listitem");
     expect(listItems.length).toEqual(5);
 
     const list = screen.getByRole("list");
     console.log(prettyDOM(list));
-
 
   });
 
