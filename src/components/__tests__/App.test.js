@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import App from "App";
 import mockedAxios from 'axios';
 
-const data = {
+const axiosRes = {
   data: [
     { name: "Betty White", uid: "1" },
     { name: "Freddy Mercury", uid: "2" },
@@ -63,7 +63,7 @@ describe('List Tests', () => {
   it("can load friends from API", async () => {
     const { container } = render(<App />);
 
-    mockedAxios.get.mockResolvedValueOnce(data);
+    mockedAxios.get.mockResolvedValueOnce(axiosRes);
 
     const button = screen.getByTestId("load-friends");    // Multiple found - list
     fireEvent.click(button);
