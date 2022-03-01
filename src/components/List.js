@@ -1,8 +1,10 @@
 import React from 'react';
 
 function List(props) {
+  
+  const items = props.items || [];
 
-  const list = props.items.map((item) => {
+  const list = items.map((item) => {
     return <li key={item.uid} onClick={() => props.deleteItem(item.uid)} >{item.name}</li>;
   });
 
