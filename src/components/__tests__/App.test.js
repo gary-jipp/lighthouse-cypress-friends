@@ -1,7 +1,16 @@
 import { screen, render, cleanup, fireEvent, prettyDOM } from "@testing-library/react";
 import '@testing-library/jest-dom';
 import App from "App";
+import mockedAxios from 'axios';
 
+const data = {
+  data: [
+    { name: "Betty White", uid: "1" },
+    { name: "Freddy Mercury", uid: "2" },
+    { name: "James Holden", uid: "3" },
+    { name: "Tom Cruise", uid: "4" },
+  ]
+};
 
 afterEach(cleanup);
 
@@ -54,6 +63,8 @@ describe('List Tests', () => {
   it("can load friends from API", async () => {
     const { container } = render(<App />);
 
+    mockedAxios.get.mockResolvedValueOnce(data);
+
     const button = screen.getByTestId("load-friends");    // Multiple found - list
     fireEvent.click(button);
 
@@ -63,7 +74,7 @@ describe('List Tests', () => {
 
     // // Add async and await
     const listItems = await screen.findAllByRole("listitem");
-    expect(listItems.length).toEqual(5);
+    expect(listItems.length).toEqual(4);
 
     const list = screen.getByRole("list");
     console.log(prettyDOM(list));
