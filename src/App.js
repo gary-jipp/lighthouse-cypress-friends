@@ -31,7 +31,7 @@ export default function App() {
       <Header text="My Friends" />
       <Input onSave={addItem}></Input>
 
-      <button type="button" onClick={getData}>Get New Friends</button>
+      <button data-testid="load-friends" type="button" onClick={getData}>Get New Friends</button>
 
       <List items={data} deleteItem={deleteItem}/>
     </div>

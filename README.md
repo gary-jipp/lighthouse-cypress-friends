@@ -2,9 +2,8 @@
 
 ### To Do
 - [] Tools for testing React
+- [] Unit Testing Components
 - [] Coverage Reports
-- [] Add Features/Tests to our App
 - [] `debug()` and `prettyDOM()`
+- [] Integration Testing
 - [] Mocking AJAX Requests and Functions
-
-

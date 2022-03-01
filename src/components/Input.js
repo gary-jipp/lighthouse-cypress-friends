@@ -14,7 +14,7 @@ const Input = function(props) {
 
   return (
     <div className='input-form'>
-      <input value={text} onChange={textChanged} />
+      <input data-testid="text-input" value={text} onChange={textChanged} placeholder="Enter Name" />
       <button onClick={save}>Add Item</button>
     </div>
   );
