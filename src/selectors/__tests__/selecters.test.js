@@ -1,4 +1,4 @@
-const { getFriendCount, removeFriend, getFriendNames } = require("helpers");
+const { getFriendCount, removeFriend, getFriendNames } = require("selectors/helpers");
 
 const data = [
   { name: "Betty White", uid: "1" },
