@@ -9,6 +9,7 @@ const axiosRes = {
     { name: "Freddy Mercury", uid: "2" },
     { name: "James Holden", uid: "3" },
     { name: "Tom Cruise", uid: "4" },
+    { name: "Kanye Rest", uid: "5" },
   ]
 };
 
@@ -74,7 +75,9 @@ describe('List Tests', () => {
 
     // // Add async and await
     const listItems = await screen.findAllByRole("listitem");
-    expect(listItems.length).toEqual(4);
+    expect(listItems.length).toEqual(5);
+
+    expect(listItems[0]).toHaveTextContent("Betty White");
 
     const list = screen.getByRole("list");
     console.log(prettyDOM(list));
