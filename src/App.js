@@ -33,7 +33,7 @@ export default function App() {
 
       <button type="button" onClick={getData}>Get New Friends</button>
 
-      <List items={data} deleteItem={deleteItem}/>
+      <List items={data} deleteItem={deleteItem} />
     </div>
   );
 };

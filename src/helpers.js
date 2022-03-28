@@ -11,8 +11,7 @@ export function removeFriend(list, uid) {
     return [];
   }
 
-  return list
-    .filter(item => item.uid !== uid);
+  return list.filter(item => item.uid !== uid);
 }
 
 export function getFriendNames(list) {
